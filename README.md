@@ -12,6 +12,6 @@ The github repo of our 301 major project.
 
 [Dimpho Mahoko]: <https://github.com/>
 [Joshua Cilliers]: <https://github.com/JoshC117>
-[Jason van Hattum]: <https://github.com/Jason-vh>
+[Jason van Hattum]: <http://jasonvh.me>
 [Kyle Erwin]: <https://github.com/KyleErwin>
 [Keegan Ferrett]: <https://github.com/KeeganFerrett>
