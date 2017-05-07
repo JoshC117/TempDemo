@@ -2,7 +2,7 @@
 ## Albert Prime
 
 #### Summary 
-The github repo of our 301 major project.
+The github repo of our 301 capstone project.
 ##### Group Members
 * [Dimpho Mahoko] 
 * [Jason van Hattum]
