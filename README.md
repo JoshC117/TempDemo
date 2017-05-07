@@ -2,7 +2,7 @@
 ## Albert Prime
 
 #### Summary 
-The github repo of our 301 capstone project.
+The github repo of our 301 capstone project. The current brief for the project can be found [here][current-spec].
 ##### Group Members
 * [Dimpho Mahoko] 
 * [Jason van Hattum]
@@ -15,3 +15,4 @@ The github repo of our 301 capstone project.
 [Jason van Hattum]: <http://jasonvh.me>
 [Kyle Erwin]: <https://github.com/KyleErwin>
 [Keegan Ferrett]: <https://github.com/KeeganFerrett>
+[current-spec]: <http://cs.up.ac.za/files/COS301/Download/1883/>
