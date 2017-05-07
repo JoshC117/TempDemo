@@ -1,3 +1,6 @@
 *.class
 *.zip
 *.o
+*.jar
+*.war
+*.ear
