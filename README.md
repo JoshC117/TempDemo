@@ -3,6 +3,7 @@
 
 #### Summary 
 The github repo of our 301 capstone project. The current brief for the project can be found [here][current-spec].
+
 ##### Group Members
 * [Dimpho Mahoko] 
 * [Jason van Hattum]
