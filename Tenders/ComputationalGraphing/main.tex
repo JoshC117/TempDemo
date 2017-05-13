@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\input{../Common/style}
+\title{Computational Graphing}
+
+\begin{document}
+    \newcommand{\titleimage}{compiax.png}
+    \input{../Common/titlepage}
+    
+    \input{../Common/contentspage}
+    % Entries in the contents page
+    \begin{tikzpicture}[remember picture,overlay,anchor = north]
+        % Project Overview
+        \node[table_number] at (2.5,-3) {2};
+        \node[table_heading] at (10.5,-3.5) {Project Overview};
+        % Methodologies
+        \node[table_number] at (2.5,-6) {3};
+        \node[table_heading] at (10.5,-6.5) {Methodologies};
+        % The Team
+        \node[table_number] at (2.5,-9) {4};
+        \node[table_heading] at (10.5,-9.5) {The Team}; 
+    \end{tikzpicture}
+	
+	\pagenumbering{arabic}
+
+	\newpage
+
+	\section{Project Overview}
+
+	%type section here
+
+	\newpage
+	\section{Proposed Methodology}
+	\input{../Common/methodology}
+	\newpage
+	\section{The Team}
+	\input{../Common/team}
+
+	%Give description on why we are good for this project
+
+
+\end{document}
