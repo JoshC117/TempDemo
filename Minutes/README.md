@@ -1,4 +1,91 @@
-# Minutes from 10/05/2016
+# Minutes from 14/05/2017
+
+## KPMG
+
+We'll discuss both, list advantages and disadvantages. However, we would recommend a Web App.
+
+An idea for expansion is mobile apps, preferably android.
+
+Skills
+
+- Web experience
+- Android app skills
+- Back-end experience 
+
+Implementation
+
+- MEAN stack web App (looks great, Node js server)
+
+
+- Front end frame work (ie, Materialize)
+- APIs, Google logins, Google Maps, Uber?, rest api, Google keep
+- Monitor users?
+
+
+
+## Compiax 
+
+Skills
+
+- Compiler 
+- Web experience
+- Maths
+
+Implementation
+
+- Interpretor (but not really)
+- MEAN stack web App (looks great, Node js server)
+
+
+- Front end frame work (ie, Materialize)
+- Drag and drop 
+- APIs, like calling it from other apps
+- Collaborations 
+- Github functionality (ie create and use functions, projects become modules for other projects)
+- Neural Networks?
+
+
+
+## IOT Homecare
+
+Skills
+
+- Raspberry Pi 
+- Pyhton 
+- Mobile expertise 
+
+Implementation
+
+- Raspberry Pi 0
+
+- Sprinklers
+
+- Automated med dispenser 
+
+- Room sensors, 
+
+- Stove monitoring 
+
+- Light sensors 
+
+- Smart TVs, save energy
+
+- Left the tap on?
+
+- Panic button, smart bracelet
+
+- Automated house components 
+
+- App control, Tablet control 
+
+- Name, Nightingale
+
+  ​
+
+## Deployment Diagrams
+
+# Minutes from 10/05/2017
+
 ## Tenders
 Due on May 15th.
 
