@@ -1,6 +1,6 @@
 % Styles
 \tikzstyle{table_number}=[white,font=\fontsize{80}{144}\selectfont]
-\tikzstyle{table_heading}=[font=\fontsize{35}{144}\selectfont,text width = 12cm]
+\tikzstyle{table_heading}=[font=\fontsize{35}{144}\selectfont,text width = 14cm]
 
 \begin{tikzpicture}[remember picture,overlay, anchor = north]
     % Clear footer and header
@@ -8,14 +8,5 @@
     \fill[white] ([xshift=5.8cm]current page.south west) rectangle ([yshift=3mm]current page.south east);   
     % Sidebar and Title
     \fill[red] (current page.north west) rectangle ([xshift=5.8cm]current page.south west);
-    \node[title] at (6.5,0) {Table of Contents};
-    % % Project Overview
-    % \node[table_number] at (2.5,-3) {2};
-    % \node[table_heading] at (10.5,-3.5) {Project Overview};
-    % % Methodologies
-    % \node[table_number] at (2.5,-6) {3};
-    % \node[table_heading] at (10.5,-6.5) {Methodologies};
-    % % The Team
-    % \node[table_number] at (2.5,-9) {4};
-    % \node[table_heading] at (10.5,-9.5) {The Team};            
+    \node[title] at (7,0) {Table of Contents};         
 \end{tikzpicture}

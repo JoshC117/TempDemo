@@ -13,24 +13,26 @@
     % Entries in the contents page
     \begin{tikzpicture}[remember picture,overlay,anchor = north]
         % Project Overview
-        \node[table_number] at (2.5,-3) {2};
-        \node[table_heading] at (10.5,-3.5) {Project Overview};
+        \node[table_number] at (3,-3) {1};
+        \node[table_heading] at (12,-3.5) {Project Overview};
         % Methodologies
-        \node[table_number] at (2.5,-6) {3};
-        \node[table_heading] at (10.5,-6.5) {Methodologies};
+        \node[table_number] at (3,-6) {3};
+        \node[table_heading] at (12,-6.5) {Proposed Methogology};
         % The Team
-        \node[table_number] at (2.5,-9) {4};
-        \node[table_heading] at (10.5,-9.5) {The Team}; 
+        \node[table_number] at (3,-9) {4};
+        \node[table_heading] at (12,-9.5) {The Team}; 
+        % Why Us?
+        \node[table_number] at (3,-12) {9};
+        \node[table_heading] at (12,-12.5) {Why Us?}; 
     \end{tikzpicture}
 	
-	\pagenumbering{arabic}
-
 	\newpage
+	\pagenumbering{arabic}
 
 	\section{Project Overview}
 	As an elderly or just sickly person, it is common for those who can afford it to hire a 24 hour caregiver to monitor the patient and give them attention when needed. This becomes a problem when you cannot afford the service or you're just uncomfortable with introducing this strange person into your life. The Internet Of Things HomeCare System is a system designed to reduce costs of being a sick person such that you do not need a 24 hour caregiver with you checking your blood sugar levels, heart-rate and what not every 2 hours. \\
 	
-	The name we have chosen for the system is Nightingale because it represents a guardian which is what the system in question is basically supposed to do.\\
+	The name we have chosen for the system is Nightingale. We chose this name because the name Nightingale is synonymous with healthcare, thanks to Florence Nightingale, who was a pioneer in the field in the 1800s.\\
 	
 	A few ideas for how the system can be implemented and used:
 	
@@ -47,6 +49,14 @@
 		
 	\end{itemize}
 
+	\setlength{\fboxsep}{15pt}
+	\begin{figure}[htb]
+	\framebox[\textwidth][l]{\includegraphics[width=0.95\textwidth]{deployment.png}}
+	\caption{Deployment Diagram}
+	\end{figure}
+	
+	
+
 	\newpage
 	\section{Proposed Methodology}
 	\input{../Common/methodology}
@@ -55,7 +65,9 @@
 	\input{../Common/team}
 	\newpage
 	\section{Why Albert Prime?}
-	
+	\begin{center}
+    	\includegraphics[width=4cm]{../Common/AlbertPrimeLogo.png}
+	\end{center}
 	Our team consists of a set of people with enough skills to complete this project sufficiently and then some. We are all sufficiently competent in MEAN stack. \\ 
 	
 	Keegan is our resident Raspberry Pi expert. He has a passion for Raspberry Pi and works with them on a regular basis. This will aid the development of this system as one of the requirements is to program a Raspberry Pi to gather the data from the devices around the house.\\
@@ -69,10 +81,5 @@
 	
 	Kyle is very passionate about Artificial Intelligence which is always a useful skill in today's age. This system could use his passion and skill for the monitoring and learning the user's patterns such that if anything seems out of place, the caregivers can notified.\\
 	
-	All 5 group members are talented developers. Above are a few of the skills we have to offer but our skills are not limited to what is mentioned above. We are all hardworking fast learners and willing to learn any new technologies and skills needed to make this system a successful one. 
-	\newpage
-
-	%Give description on why we are good for this project
-
-
+	All 5 group members are talented developers. Above are a few of the skills we have to offer but our skills are not limited to what is mentioned above. We are all hardworking fast learners and willing to learn any new technologies and skills needed to make this system a successful one.
 \end{document}
