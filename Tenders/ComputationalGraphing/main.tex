@@ -29,7 +29,44 @@
 
 	\section{Project Overview}
 
-	%type section here
+	Our vision of this project is a very easy to use, web based, interpreted programming language. We see this tool as a way for people, 
+    who may not be able to code, to write there own, short mathematical programs. It is important that this part of the tool be treated as
+    any interpreter program would. Implementing typical interpreter components, such and lexical analysis and syntax analysis, is important
+    to ensure that the libraries and packages, written by the user, preform in a reliable and consistant manner, such that the user can 
+    trust whatever output their functions return. Our plan is try and write the interpreter in such a way that it can be run in either python
+    or javascript on the client's side, to ensure that output is produced and displayed as fast as possible, as well as remove pressure 
+    from the server. However, we do see this interpreter possibly getting to larger to pass through to the client, depending on what 
+    funcationality is already implemented for the user (mathimatical operations, control structures, etc.), so running the interpreter on the
+    server side may be the best option inorder to keep the web tool light weight. \par
+
+    It is also extremely important that the web tool is easy to learn and use, as it will be used primarily by people who do not necessarily
+    understand computer programming. We do not want to over whelm new users with too many options that they may not understand, but at the 
+    same time we do want to provide them with all the tools that they could possibly need to create any function, as well as provide them 
+    with any all the information, about their libraries, that they could need. This is where we see UI design being important. We will need 
+    to create the website in such as way that users will be able to find whatever they may want easily and without getting confused and 
+    frustated. Our team fully believes in good, intuitive GUI design that will make the users feeling comfortable when using our software.
+    We would like to make use of a popular html/css framework, such as materialize css, to give the final product a very clean and modern look,
+    well also speeding up our production time. We would also plan to do multiple usability tests towards the end of our development, to ensure
+    that potential users will feel comfortable, and that we have succeeded in making the application intuitive for the users. \par
+
+    It is important that all user information be stored in a safe an effient manner on the back-end, and that information retrieval be fast. 
+    That is why we propose making use of the MEAN stack when creating the server and database. The MEAN stack will allow us to create a fast, 
+    custom, webserver to handle and request that the user may have. Such requests would include, logging into the users account, fetching 
+    libraries that the user may currently be working on, exploring other users libraries and profiles, etc. A mongo database will allow for 
+    extremely fast data retrieval allowing the server to respond to more requests in a shorter time than a LAMP stack implementation. A MEAN 
+    stack implemenation will allow us create a seperate gateway for exnternal components to access the libraries created by uses, as mentioned
+    in the orignal brief.\par
+
+    A possible potential feature that we would like to add to this tool, is the ability to download libraries and packages as a java/c++/python 
+    class. The user would simply create and test the library on the web application and then select an option to download it as a prograaming
+    language class. The library would then be sent to the node.js server, which would translate the graph into a class, and return the file to 
+    the user. Users could also download any public libraries that someone else has implemented, to use in their own programs. The would not be 
+    such a tough feature to implement if we treat this application as an interpreter, as we will just be translating code. This feature will 
+    allow programmers the ability to quickly write and test mathematical functions which they can the use in their programs. This could help 
+    attract more users which a different skill set to the site. \\
+    \\
+    \noindent\textbf{The following is our proposed deployment of the system} \\
+    \includegraphics[width=\textwidth]{deployment}
 
 	\newpage
 	\section{Proposed Methodology}
@@ -38,7 +75,26 @@
 	\section{The Team}
 	\input{../Common/team}
 
-	%Give description on why we are good for this project
+	\section{Why Albert Prime?}
+
+    Two of our memembers have both completed the compiler construction course at the University of Pretoria, and will be able to apply 
+    the knowledge gained from building a compiler into building the necessary components needed for the interpreter component of this project. 
+    It is important that this is done correctly to ensure that no unexpected errors or crashes occur when a user is testing their 
+    created library. Although this may be seen as a very basic interpreter, it will still be important to implement all the necessary 
+    components of an interpreter/compiler to ensure that, even as functions and projects get larger, the user can still be sure that they are
+    getting reliable and consistant results, without running the risk of potentially crashing the node.js server. It will also give us the 
+    ability of being able to add more basic, such as if statements and loops, with little effort.\par
+
+    Every member of our team has experience with working on front-end and back-end web development. This is necessary for this project 
+    as our vision for the final product would involve much of what the user is seeing, being done on the client's side, as well as having
+    admistrative tasks, being worked on on the back-end. The front-end needs aesthetically pleasing as well as being easy to use and intuitive,
+    well the back-end needs to be secure, safe, and reliable to ensure that no personal data is lost and that the web server stays up 
+    and running at all times. Each member has experience working with the MEAN stack giving us the advantage of not needing to relearn the
+    the thechnologies used in a MEAN stack implementation.\par
+
+    Finally, each member of our team is a skilled mathematician, having completed calculus, linear algebra, and discrete mathematics courses.
+    This means we will not have any trouble implementing and testing the mathematical logic. We will be able to account of any possible need
+    that a user may have, such as binary mathematics, discrete mathematics, or linear algebra operations.
 
 
 \end{document}
