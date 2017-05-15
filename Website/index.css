@@ -1,0 +1,94 @@
+* {
+	padding: 0;
+	margin: 0;
+	background-color: black;
+}
+
+#hero {
+	width: 100%;
+	height:100%;
+}
+
+#team {
+	width: 100%;
+	height:100%;
+	background-color: #CCC;
+}
+
+#methodology {
+	width: 100%;
+	height:100%;
+	background-color: #DDD;
+}
+
+#bids {
+	width: 100%;
+	height:100%;
+	background-color: #CCC;
+}
+
+.heading {
+	padding-top: 5px;
+	color: #D32D2D;
+	text-align: center;
+	font-family: 'Russo One', sans-serif;
+
+	font-size: 5em;
+	margin: 0px;
+}
+
+.subheading {
+	padding-top: 5px;
+	color: #D32D2D;
+	text-align: center;
+	font-family: 'Russo One', sans-serif;
+
+	font-size: 2em;
+	margin: 0px;
+}
+
+.subsubheading {
+	position: relative;
+	bottom: 0px;
+
+	color: #D32D2D;
+	text-align: center;
+	font-family: 'Russo One', sans-serif;
+
+	font-size: 2em;
+}
+
+.content {
+	color: #555;
+	text-align: center;
+	font-size: 2em;
+}
+
+.logo {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+
+    width: 50%;
+    margin-left: -15%;
+}
+
+.quote {
+	position: absolute;
+    top: 60%;
+    left: 40%;
+
+    font-size: 2em;
+
+    width: 50%;
+    margin-left: -15%;
+}
+
+.teamMemeber {
+	text-align: center;
+}
+
+.teamMemeber p{
+	color: #777;
+	font-size: 1em;
+}

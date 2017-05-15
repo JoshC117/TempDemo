@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\input{../Common/style}
+\title{Project Assigning System}
+
+\begin{document}
+    \newcommand{\titleimage}{kpmg.png}
+    \input{../Common/titlepage}
+    
+    \input{../Common/contentspage}
+    % Entries in the contents page
+    \begin{tikzpicture}[remember picture,overlay,anchor = north]
+        % Project Overview
+        \node[table_number] at (2,-3) {1};
+        \node[table_heading] at (12,-3.5) {Project Overview};
+        % Methodologies
+        \node[table_number] at (2,-6) {3};
+        \node[table_heading] at (12,-6.5) {Proposed Methodology};
+        % The Team
+        \node[table_number] at (2,-9) {4};
+        \node[table_heading] at (12,-9.5) {Timeline}; 
+        % Why Us?
+        \node[table_number] at (2,-12) {5};
+        \node[table_heading] at (12,-12.5) {The Team};
+        % Why Us?
+        \node[table_number] at (2,-15) {11};
+        \node[table_heading] at (12,-15.5) {Why Albert Prime?}; 
+    \end{tikzpicture}
+	
+	\newpage
+	\pagenumbering{arabic}	
+
+	\section{Project Overview}
+	
+	With the growing demand in today's world for shorter development cycles (in more then just the field of programming), lower project costs, and the minimizing of downtime between projects, a clear need is present for the improvement of the administrative tools used to oversee the assignment of employees to projects. With this project we see an opportunity to build a tool that can become integral to the management of employees by taking advantage of the multiple synchronized services offered by Google for example. A tool that can be integrated to work with and manage an employee based on personal details, such as their calendar and skills, holds immense promise in improving any industry that it is deployed into.\\
+	
+	For the creation of such a tool, we have given initial thoughts to how we would go about implementing it and what technologies we would use to address the needs of the project.
+	
+	\subsection*{Technologies To Address Project Needs}
+	\textbf{Web Application}\\
+	Based on our initial analysis we would recommend moving forward with a web application. The reasons for this are that it allows for a high level of portability, scalability, and accessibility. It allows the application to be accessed from any computer with a web browser, and can even be programmed to be accessible from mobile devices without the need for a dedicated mobile application.\\
+		
+	\textbf{Node.js Server}\\
+	For our server back-end, we would elect to implement a Node.js server. This is the primary technology that allows us to maintain high levels of scalability, while also allowing us to keep high cohesion and low coupling among any modules that we add to the system. It also has a lot of support from the programming community at large currently, in terms of community assistance and documentation. \\
+	
+	\textbf{MongoDB}\\
+	For our database, we would elect to implement a MongoDB database. Due to it being a No-SQL database, it has huge benefits in being able to scale for any requirements in terms of server clusters, performance, and data. It is also built towards supporting the use of agile methodologies for programming by supporting sprints and frequent iterations.\\
+	
+	\newpage\\
+	\textbf{Front-end Framework}\\
+	For the front-end design of the application we would look at making use of any CSS framework such as Bootstrap, Materialize, or Material.io. This helps greatly in implementing a design which is both user-friendly and visually appealing, as well as being well tested and less prone to errors. All of these tools will help greatly in building an interface for the app which is up-to-date with modern standards and which can be easily ported to any browser configuration or mobile device.\\
+	
+	\textbf{External APIs}\\
+	We fully agree on maximizing the usage of external APIs to improve the capabilities of the app. The foremost of these is the Google API, which would allow users to sync up their email accounts (if they make use of gmail's services), their calendars, and their usage of google maps. The usage of Google accounts and OAuth can also be used as an additional layer of security for the application. The synchronous nature of the Google API is inherently a large advantage to what we hope to achieve with this project, and should be fully exploited for it.\\
+	
+	\textbf{Additional Suggestions}\\
+	Our foremost suggestion is the inclusion of a time-card system which would function similarly to Github's Issues Board, in that once users were assigned to projects, they could register on the application the task or issue that they were working on. This can allow for integrated timekeeping which can be used for the recoverability assessment mentioned in the project specification.\\
+
+	\newpage
+	\section{Proposed Methodology}
+	\input{../Common/methodology}
+	\newpage
+	\section{The Team}
+	\input{../Common/team}
+
+	\newpage
+	\section{Why Albert Prime?}
+	We believe that our group holds the necessary skills and talents to see this project realized to its fullest extent. All of our group members have a wealth of experience working with the MEAN stack along with talents specific to each of us that make us suited to the development of this project.\\
+	
+	Jason is an incredibly skilled developer with experience in both web app development, which he has done for the University of Pretoria, as well as in mobile development which he has pursued in his free time.\\
+	
+	Kyle is a developer who prides himself on creating outstanding user interfaces for the websites and mobile applications he has worked on and will no doubt ensure that this application will meet both his and your high standards.\\
+	
+	Dimpho is skilled in web development and has a competitive spirit that drives her to always perform at her best. Her experience with database administration will be invaluable in ensuring that the database of this application will be up to a high standard.\\
+	
+	Keegan has gained experienced with Node.js, by working on a Node Server which was to serve as the backend of an android application he was working on in his free time.\\
+	
+	Joshua has experience in both web and mobile application development which he can lend to any part of the project, which makes him a valuable member of the team.\\
+	
+	Overall our team is more than sufficiently equipped with the skills to tackle this project and produce results to your satisfaction.\\
+	
+	%Give description on why we are good for this project
+
+
+\end{document}

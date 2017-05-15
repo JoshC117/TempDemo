@@ -1,19 +1,9 @@
 # COS 301
-## Albert Prime
+## Albert Prime - Tender Documents
 
-#### Summary 
-The github repo of our 301 capstone project. The current brief for the project can be found [here][current-spec].
+### Compilation
+Needs to be compiled with XeTeX rather than the standard PDFLaTeX (Because PDFLaTeX doesn't support modern fonts). TexMaker has this built in, not sure about the other editors. Also works in ShareLatex.\
+Needs to have the [lato](http://www.latofonts.com/lato-free-fonts/) fonts installed.
 
-##### Group Members
-* [Dimpho Mahoko] 
-* [Jason van Hattum]
-* [Joshua Cilliers]
-* [Keegan Ferrett]
-* [Kyle Erwin]
-
-[Dimpho Mahoko]: <https://github.com/>
-[Joshua Cilliers]: <https://github.com/JoshC117>
-[Jason van Hattum]: <http://jasonvh.me>
-[Kyle Erwin]: <https://github.com/KyleErwin>
-[Keegan Ferrett]: <https://github.com/KeeganFerrett>
-[current-spec]: <http://cs.up.ac.za/files/COS301/Download/1883/>
+### Directory Structure
+The only files needed per-tender are the main.tex files and the cover image. The content page, title page and other stuff is all in Common.
