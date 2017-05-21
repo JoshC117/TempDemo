@@ -1,9 +1,18 @@
-# COS 301
-## Albert Prime - Tender Documents
+![logo](https://raw.githubusercontent.com/KyleErwin/Albert-Prime/master/Documentation/Common/AlbertPrimeLogo.png)
+# COS 301 - Albert Prime
+## The Team
+- Kyle Erwin
+- Keegan Ferrett
+- Joshua Cilliers
+- Jason van Hattum
+- Dimpho Mahako
 
-### Compilation
-Needs to be compiled with XeTeX rather than the standard PDFLaTeX (Because PDFLaTeX doesn't support modern fonts). TexMaker has this built in, not sure about the other editors. Also works in ShareLatex.\
-Needs to have the [lato](http://www.latofonts.com/lato-free-fonts/) fonts installed.
+## The Project
+< description of project >
 
-### Directory Structure
-The only files needed per-tender are the main.tex files and the cover image. The content page, title page and other stuff is all in Common.
+## The Documentation
+- [System Requirements Specification](https://raw.githubusercontent.com/KyleErwin/Albert-Prime/master/Documentation/SystemRequirementsSpec/srs.pdf)
+- [Architectural Requirements](https://raw.githubusercontent.com/KyleErwin/Albert-Prime/master/Documentation/ArchitecturalRequirementsSpec/ars.pdf)
+- [User Manual](https://raw.githubusercontent.com/KyleErwin/Albert-Prime/master/Documentation/User%20Manual/usermanual.pdf)
+- [Integration Requirements](https://raw.githubusercontent.com/KyleErwin/Albert-Prime/master/Documentation/Integration%20Requirements/integrationrequirements.pdf)
+- [Test Reports](https://raw.githubusercontent.com/KyleErwin/Albert-Prime/master/Documentation/Test%20Reports/testreports.pdf)
