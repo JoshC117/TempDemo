@@ -1,19 +1,18 @@
-# COS 301
-## Albert Prime
+![logo](https://raw.githubusercontent.com/KyleErwin/Albert-Prime/master/Documentation/Common/AlbertPrimeLogo.png)
+# COS 301 - Albert Prime
+## The Team
+- Kyle Erwin
+- Keegan Ferrett
+- Joshua Cilliers
+- Jason van Hattum
+- Dimpho Mahako
 
-#### Summary 
-The github repo of our 301 capstone project. The current brief for the project can be found [here][current-spec].
+## The Project
+< description of project >
 
-##### Group Members
-* [Dimpho Mahoko] 
-* [Jason van Hattum]
-* [Joshua Cilliers]
-* [Keegan Ferrett]
-* [Kyle Erwin]
-
-[Dimpho Mahoko]: <https://github.com/>
-[Joshua Cilliers]: <https://github.com/JoshC117>
-[Jason van Hattum]: <http://jasonvh.me>
-[Kyle Erwin]: <https://github.com/KyleErwin>
-[Keegan Ferrett]: <https://github.com/KeeganFerrett>
-[current-spec]: <http://cs.up.ac.za/files/COS301/Download/1883/>
+## The Documentation
+- [System Requirements Specification](https://raw.githubusercontent.com/KyleErwin/Albert-Prime/master/Documentation/SystemRequirementsSpec/srs.pdf)
+- [Architectural Requirements](https://raw.githubusercontent.com/KyleErwin/Albert-Prime/master/Documentation/ArchitecturalRequirementsSpec/ars.pdf)
+- [User Manual](https://raw.githubusercontent.com/KyleErwin/Albert-Prime/master/Documentation/User%20Manual/usermanual.pdf)
+- [Integration Requirements](https://raw.githubusercontent.com/KyleErwin/Albert-Prime/master/Documentation/Integration%20Requirements/integrationrequirements.pdf)
+- [Test Reports](https://raw.githubusercontent.com/KyleErwin/Albert-Prime/master/Documentation/Test%20Reports/testreports.pdf)

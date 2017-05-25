@@ -1,0 +1,127 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\input{../Common/style}
+\title{Compiax - Computational Graphing Tool}
+
+\begin{document}
+    \newcommand{\titleimage}{compiax.png}
+    \newcommand{\titlecompany}{Compiax}
+    \input{../Common/titlepage}
+    
+    \input{../Common/contentspage}
+    % Entries in the contents page
+    \begin{tikzpicture}[remember picture,overlay,anchor = north]
+        % Project Overview
+        \node[table_number] at (2,-3) {1};
+        \node[table_heading] at (12,-3.5) {Project Overview};
+        % Methodologies
+        \node[table_number] at (2,-6) {3};
+        \node[table_heading] at (12,-6.5) {Proposed Methogology};
+        % The Team
+        \node[table_number] at (2,-9) {4};
+        \node[table_heading] at (12,-9.5) {Timeline}; 
+        % Why Us?
+        \node[table_number] at (2,-12) {5};
+        \node[table_heading] at (12,-12.5) {The Team}; 
+        %
+        \node[table_number] at (2,-15) {10};
+        \node[table_heading] at (12,-15.5) {Why Albert Prime?}; 
+    \end{tikzpicture}
+	
+	
+
+	\newpage
+	\pagenumbering{arabic}
+	\section{Project Overview}
+
+	\textbf{Our Vision}\\
+	Our vision of this project is a very easy to use, web based, interpreted programming language. We see this tool as a way for people, 
+    who may not be able to code, to write there own, short mathematical programs. It is important that this part of the tool be treated as
+    any interpreter program would. Implementing typical interpreter components, such and lexical analysis and syntax analysis, is important
+    to ensure that the libraries and packages, written by the user, preform in a reliable and consistent manner, such that the user can 
+    trust whatever output their functions return. \\
+    
+	\textbf{Our Vision}\\    
+    Our plan is try and write the interpreter in such a way that it can be run in either python
+    or JavaScript on the client's side, to ensure that output is produced and displayed as fast as possible, as well as remove pressure 
+    from the server. However, we do see this interpreter possibly getting to larger to pass through to the client, depending on what 
+    functionality is already implemented for the user (mathematical operations, control structures, etc.), so running the interpreter on the
+    server side may be the best option in order to keep the web tool light weight. \\
+
+	\textbf{Goals and Requirements}\\
+    It is also extremely important that the web tool is easy to learn and use, as it will be used primarily by people who do not necessarily
+    understand computer programming. We do not want to overwhelm new users with too many options that they may not understand, but at the 
+    same time we do want to provide them with all the tools that they could possibly need to create any function, as well as provide them 
+    with any all the information, about their libraries, that they could need. This is where we see UI design being important. We will need 
+    to create the website in such as way that users will be able to find whatever they may want easily and without getting confused and 
+    frustrated. Our team fully believes in good, intuitive GUI design that will make the users feeling comfortable when using our software.
+    We would like to make use of a popular HTML/CSS framework, such as materialize CSS, to give the final product a very clean and modern look,
+    well also speeding up our production time. We would also plan to do multiple usability tests towards the end of our development, to ensure
+    that potential users will feel comfortable, and that we have succeeded in making the application intuitive for the users. \\
+
+	\textbf{Backend Technologies}\\
+    It is important that all user information be stored in a safe an efficient manner on the back-end, and that information retrieval be fast. 
+    That is why we propose making use of the MEAN stack when creating the server and database. The MEAN stack will allow us to create a fast, 
+    custom, web-server to handle and request that the user may have. Such requests would include, logging into the users account, fetching 
+    libraries that the user may currently be working on, exploring other users libraries and profiles, etc. A mongo database will allow for 
+    extremely fast data retrieval allowing the server to respond to more requests in a shorter time than a LAMP stack implementation. A MEAN 
+    stack implementation will allow us create a separate gateway for external components to access the libraries created by uses, as mentioned
+    in the original brief.\\
+
+	\textbf{Additional Features}\\
+    A possible potential feature that we would like to add to this tool, is the ability to download libraries and packages as a Java, C++ or Python class. The user would simply create and test the library on the web application and then select an option to download it as a programming
+    language class. The library would then be sent to the NodeJS server, which would translate the graph into a class, and return the file to 
+    the user. Users could also download any public libraries that someone else has implemented, to use in their own programs. The would not be 
+    such a tough feature to implement if we treat this application as an interpreter, as we will just be translating code. This feature will 
+    allow programmers the ability to quickly write and test mathematical functions which they can the use in their programs. This could help 
+    attract more users which a different skill set to the site. \\
+    \\
+    \textbf{The following is our proposed deployment of the system:}
+\setlength{\fboxsep}{15pt}
+	\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.6\textwidth]{deployment.png}
+	\caption{Deployment Diagram}
+	\end{figure}
+
+	\newpage
+	\section{Proposed Methodology}
+	\input{../Common/methodology}
+	\newpage
+	\section{The Team}
+	\input{../Common/team}
+	\newpage
+	\section{Why Albert Prime?}
+	\begin{center}
+    	\includegraphics[width=4cm]{../Common/AlbertPrimeLogo.png}
+	\end{center}
+	\textbf{Compiler}\\
+    Two of our members have both completed the compiler construction course at the University of Pretoria, and will be able to apply 
+    the knowledge gained from building a compiler into building the necessary components needed for the interpreter component of this project. 
+    It is important that this is done correctly to ensure that no unexpected errors or crashes occur when a user is testing their 
+    created library. Although this may be seen as a very basic interpreter, it will still be important to implement all the necessary 
+    components of an interpreter/compiler to ensure that, even as functions and projects get larger, the user can still be sure that they are
+    getting reliable and consistent results, without running the risk of potentially crashing the NodeJS server. It will also give us the 
+    ability of being able to add more basic, such as if statements and loops, with little effort.\\
+    
+	\textbf{Frontend and Backend}\\
+    Every member of our team has experience with working on front-end and back-end web development. This is necessary for this project 
+    as our vision for the final product would involve much of what the user is seeing, being done on the client's side, as well as having
+    administrative tasks, being worked on on the back-end. The front-end needs aesthetically pleasing as well as being easy to use and intuitive,
+    well the back-end needs to be secure, safe, and reliable to ensure that no personal data is lost and that the web server stays up 
+    and running at all times. Each member has experience working with the MEAN stack giving us the advantage of not needing to relearn the
+    the technologies used in a MEAN stack implementation.\par
+
+    Finally, each member of our team is a skilled mathematician, having completed calculus, linear algebra, and discrete mathematics courses.
+    This means we will not have any trouble implementing and testing the mathematical logic. We will be able to account for any possible need
+    that a user may have, such as binary mathematics, discrete mathematics, or linear algebra operations.\\
+    \begin{figure}[htb]
+	\centering
+	\includegraphics[width=\textwidth]{../Common/team.jpg}
+	\caption{The Squad}
+	\end{figure}
+
+
+\end{document}

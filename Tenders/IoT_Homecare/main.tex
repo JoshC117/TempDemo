@@ -1,31 +1,104 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 \usepackage{graphicx}
+\usepackage{hyperref}
 
-\title{Tender 1}
-\date{07-05-2017}
-\author{Keegan Ferrett}
+\input{../Common/style}
+\title{EPI-USE IOT Homecare System}
 
 \begin{document}
-	\pagenumbering{gobble}
-	\maketitle
+    \newcommand{\titleimage}{iot.png}
+    \newcommand{\titlecompany}{Epi-Use}
+    \input{../Common/titlepage}
+    
+    \input{../Common/contentspage}
+    % Entries in the contents page
+    \begin{tikzpicture}[remember picture,overlay,anchor = north]
+        % Project Overview
+        \node[table_number] at (2,-3) {1};
+        \node[table_heading] at (12,-3.5) {Project Overview};
+        % Methodologies
+        \node[table_number] at (2,-6) {3};
+        \node[table_heading] at (12,-6.5) {Proposed Methogology};
+        % The Team
+        \node[table_number] at (2,-9) {5};
+        \node[table_heading] at (12,-9.5) {Timeline}; 
+        % Why Us?
+        \node[table_number] at (2,-12) {6};
+        \node[table_heading] at (12,-12.5) {The Team};
+        %
+        \node[table_number] at (2,-15) {11};
+        \node[table_heading] at (12,-15.5) {Why Albert Prime?};  
+    \end{tikzpicture}
+	
 	\newpage
 	\pagenumbering{arabic}
 
-	\tableofcontents
-	\newpage
-
 	\section{Project Overview}
-
-	%type section here
-
+	As an elderly or just sickly person, it is common for those who can afford it to hire a 24 hour caregiver to monitor the patient and give them attention when needed. This becomes a problem when you cannot afford the service or you're just uncomfortable with introducing this strange person into your life. The Internet Of Things HomeCare System is a system designed to reduce costs of being a sick person such that you do not need a 24 hour caregiver with you checking your blood sugar levels, heart-rate and what not every 2 hours. \\
+	
+	The name we have chosen for the system is Nightingale. We chose this name because the name Nightingale is synonymous with healthcare, thanks to Florence Nightingale, who was a pioneer in the field in the 1800s.\\
+	
+\textbf{Server}\\
+	Due to the fact that we are dealing with sensitive information, stability, reliability, security and speed are very important during the transfer of data. As required we will EPI-USE's cloud server for communication with a mobile application used by the patient, caregiver and family members with access. Which is expected to result in deployment speed and increased stability.\\ 
+	
+The plan is to make use of the MEAN stack for implementation. Our reasoning for this is because it supports agile principle, it is very scalable, and fast. Other advantages are the huge module library of node.js and the use of JSON to transfer the data and the fact that we will be able support as many concurrent connections as the hardware can handle. Overall MEAN stack will offer great performance for the task at hand.\\
+	
+	Most devices like the kind we plan to use for this project have on-device-processing capabilities for structuring data, converting it to a different format or validation. The semi-processed data will then be sent to the server over a WiFi network for further processing and then to the caregiver for analysis.	\\
+	
+	\textbf{Mobile Application}\\
+	For the mobile application development we can use Ionic as that eliminates the need to develop an app for the different mobile platforms there are. Ionic's native plugIns include finger print authorization which would be very useful considering this is a system that if compromised, could put the life of the patient at risk at the worst. \\
 	\newpage
+	\textbf{Database}\\
+	The system will need a database to store the client information. We feel MongoDB would be a great option for this due to it's scalability with regards to server clusters, performance and data. It is also built towards supporting the use of agile methodologies for programming by supporting sprints and frequent iterations.\\	
+	
+	A few ideas for how the system can be implemented and used:
+	
+	\begin{itemize}
+		
+		\item An automated medicine dispenser that can be set to dispense medicine according to time and dosage of the person it is meant to take care of. The dispenser can also have a reminder each time it is time to take the medicine. All the tablets can be dispensed into one small bowl so that the patient doesn't have to keep track themselves.	
+		\item The system can automatically turn the sprinklers on and off depending on time and weather such that if it's going to rain, water won't be wasted. This can be applied to household items like curtains, windows, lights etc such that if there is no movement in a room for a certain period of time the lights turn off and on again if there is motion. 	
+		\item The system can include room sensors that can notify the caregivers when there is an unusual pattern of movement. If the patient hasn't moved in an unreasonable amount of time, taking sleeping and "when out" into consideration.	
+		\item We can include a smart bracelet that monitors the user's heart rate. The bracelet can include a panic button that the user can press should anything need immediate attention, signaling the caregiver. The heart rate monitor can send data periodically or on request.	
+		\item A feature that can create an alert if the stove has been on and empty, the tap running or the lights on for an unreasonable amount of time let the user know incase they've forgotten to prevent harm and save resources.	
+		\item The system will include an application that can be used by the caregiver to monitor the user and if need be, control the devices and sensors. The patient can also use the mobile application to control the devices and sensors but certain functions like changing medical dosages and switching sensors off will require administrative authorization. This can be used to control devices around the house such as the TV, lights, dishwasher etc.	
+		\item The application will also include a login for the family of the patient where they can check up on the user and communicate with the caregiver for updates.  \\		
+		This system is one that has no boundaries. The innovative possibilities are endless. The implementation will have to be modular because we need to be able to add features over time and make very few to no changes to the system itself.\\		
+	\end{itemize}
+
+	\setlength{\fboxsep}{15pt}
+	\begin{figure}[htb]
+	\framebox[\textwidth][l]{\includegraphics[width=0.8\textwidth]{deployment.png}}
+	\caption{Deployment Diagram}
+	\end{figure}
+	\vfill
 	\section{Proposed Methodology}
 	\input{../Common/methodology}
 	\newpage
 	\section{The Team}
 	\input{../Common/team}
-
-	%Give description on why we are good for this project
-
-
+	\newpage
+	\section{Why Albert Prime?}
+	\begin{center}
+    	\includegraphics[width=4cm]{../Common/AlbertPrimeLogo.png}
+	\end{center}
+	Our team consists of a set of people with enough skills to complete this project sufficiently and then some. We are all sufficiently competent in MEAN stack. \\ 
+	
+	Keegan is our resident Raspberry Pi expert. He has a passion for Raspberry Pi and works with them on a regular basis. This will aid the development of this system as one of the requirements is to program a Raspberry Pi to gather the data from the devices around the house.\\
+	
+	As third year Computer Science Students, we know a number of programming languages. It is worth mentioning that Jason is very fluent in Python amongst other languages. It will be an asset to your system to have someone with his expertise working on it.\\
+	
+	
+	Application development is one of our strong points. The mobile application needed for the caretaker communication and control of devices will make use of our skills. Joshua and Keegan's experience with iOS and Android development and his passion for mobile application development amongst others will be put to great use with this system.\\
+	
+	This system will require creativity and and a good understanding of cloud servers. The Rabbiteer program Dimpho attended in 2016 focused a lot on this. This project will be an opportunity to develop these skills and her success in the Standard bank IT challenge shows her creative capability and competence.\\
+	
+	Kyle is very passionate about Artificial Intelligence which is always a useful skill in today's age. This system could use his passion and skill for the monitoring and learning the user's patterns such that if anything seems out of place, the caregivers can notified.\\
+	
+	All 5 group members are talented developers. Above are a few of the skills we have to offer but our skills are not limited to what is mentioned above. We are all hardworking fast learners and willing to learn any new technologies and skills needed to make this system a successful one. \\
+	\begin{figure}[htb]
+	\centering
+	\includegraphics[width=\textwidth]{../Common/team.jpg}
+	\caption{The Squad}
+	\end{figure}\\
+	
 \end{document}

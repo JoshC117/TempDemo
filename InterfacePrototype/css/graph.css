@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+
+body{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: rgb(248, 248, 248)
+}
+
+p{
+    text-align: center;
+    position: relative;
+}
+
+.conceptG text{
+    pointer-events: none;
+}
+
+marker{
+    fill: grey;
+}
+
+g.conceptG:hover rect{
+    stroke: silver;
+}
+
+path.link {
+    fill: none;
+    stroke: grey;
+    stroke-width: 3px;
+    cursor: default;
+}
+
+path.link:hover{
+    stroke: silver;
+}
+
+g.connect-node circle{
+    fill: silver;
+}
+
+path.link.hidden{
+    stroke-width: 0;
+}
+
+path.link.selected {
+    stroke: silver;
+}
