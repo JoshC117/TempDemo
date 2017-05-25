@@ -1,6 +1,7 @@
 \tikzstyle{title}=[font=\fontsize{25}{144}\selectfont, text width = \textwidth, align=left]
 \tikzstyle{subtitle}=[font=\fontsize{20}{144}\selectfont, red, text width = \textwidth, align=right]
 \tikzstyle{nam}=[font=\fontsize{15}{144}\selectfont, anchor=base, gray]
+\tikzstyle{disclaimer}=[font=\fontsize{10}{144}\selectfont, white]
 %\begin{titlepage}        
         \begin{tikzpicture}[remember picture,overlay, anchor = west]
             
@@ -19,6 +20,12 @@
             \node at (-0.8,-21.5)
             {\includegraphics[width=4cm]{../Common/UniversityOfPretoriaLogo.png}};
             \node at (15,-22.0) {\includegraphics[width=5cm]{../Common/AlbertPrimeLogo.png}};  
+            
+            % red square at bottom of page
+            \fill[red] (current page.south west) rectangle ([yshift=10mm]current page.south east);
+          	% disclaimer
+            \node[disclaimer] at ([yshift=5mm, xshift=2mm]current page.south west){Note: This document is constantly under revision due to our chosen methodology, and is subject to change.};
+            \node[disclaimer] at ([yshift=5mm, xshift=-3.7cm]current page.south east){Current version: v\textbf{\documentversion}};
             
         \end{tikzpicture}        
 %    \end{titlepage}
