@@ -1,12 +1,38 @@
 \section{Introduction}
+	This section describes the scope of Project Odin, as well as an overview of the contents of the SRS document. Additionally, the purpose of the document is defined as well as a list of abbreviations and definitions.
 	\subsection{Purpose}
-
-	Purpose of the SRS and the intended audience.
+	The purpose of this document is to provide a thorough description of the requirements for Project Odin. The requirements, constraints, interfaces and interactions with other systems will be described in this document. \\
+	This document is intended as a point of reference for the client, as well as a means of keeping track of our decisions and the project for us as the development team.
 	\subsection{Scope}
-	Product name, what the product will and won't do, and the uses of the product.
+	"Project Odin" is a tool for generating computational models via a simple drag-and-drop interface. The idea is that an average user with little to no programming experience will be able to build highly complex models, for a range of tasks such as machine learning, statistical analysis or image manipulation.\\
+	Users will also be able to create \textit{projects} which will each contain a computational model, which will then be able to be used as a component in another persons model. In this way, large, complex models can be built up from components which consist of models themselves. Project authors will be able to share their projects, including a description, and be able to view the usages and popularity of their components.
+	% maybe something about how the components must be tested and whatnot
+	% also maybe something about being able to hook an api into the models	
+	
 	\subsection{Definitions, Acronyms and Abbreviations}
-	Self-explanatory.
+	% a list of definitions and such
+	\begin{itemize}
+		\item \textbf{User} - A user that is using the application.
+		\item \textbf{Model} - A computational model built in the application.
+		\item \textbf{Project} - A computational model that has been shared.
+		% etc etc
+	\end{itemize}
 	\subsection{References}
-	List documents referenced (doubt we'll need this).
+	% Documents that have been referenced
+	\textit{Empty for now.}
 	\subsection{Overview}
-	Outline the rest of the SRS and how it is organised.
+	% Outline the rest of the SRS and how it is organised.
+	This document includes 4 sections:
+	\begin{enumerate}
+		\item Introduction
+		\item Overall Description
+		\item Specific Requirements
+		\item Appendices
+	\end{enumerate}
+	The sections are laid out as follows:
+	\paragraph{Section 2 - Overall Description}
+	Section 2 provides an overview of the systems functionality and it's interaction with other systems. This chapter also outlines the users of the system and their interaction with it. Finally, the constraints and assumptions are defined.
+	\paragraph{Section 3 - Specific Requirements}
+	Section 3 starts off by outlining the specific requirements for each external interface, followed by a description of the function requirements. This is followed by the performance requirements and design constraints. Section 3 then describes the attributes or non-functional requirements of the system, including it's reliability, security, availability and interoperability. Finally, any other requirements not under the preceding categories are listed.
+	\paragraph{Appendices}
+	The appendices are empty for now.
